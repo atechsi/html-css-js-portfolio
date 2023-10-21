@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arielle Illustrisimo - Frontend Developer</title>
+
+    <!-- FAVICON -->
+    
+    <link rel="shortcut-icon" type="x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+<nav id="desktop-nav"> 
+    <div class="logo">Arielle</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <!-- <li><a href="#projects">Projects</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav"> <!--hamburger menu*/-->
+    <div class="logo">Arielle</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span> <!--yung span, these are going to be the lines on our hamburger menu-->
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links"> <!-- these are actual links that are going to be opened when we open the onlick functoin function-->
+            <li><a href="#about" onclick="toggleMenu()">About</a></li> <!--the onlick function opens and close the hamburger menu when clicked-->
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+<section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic-4.png" alt="Lily Tris profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Arielle</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+    </div>
+      <div class="wrapper">
+        <div onclick="location.href='./#experience'" class="contact-me">Contact Me
+      </div>
+</section>
+
+<div class="marquee">
+      <div class="marquee__group">
+        <span>hello there </span>
+        <span>hello there </span>
+        <span>hello there </span>
+      </div>
+      <div class="marquee__group" aria-hidden="true">
+          <span>hello there </span>
+          <span>hello there </span>
+          <span>hello there </span>
+      </div>  
+</div>
+
+  <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img
+                src="./assets/about-pic-1.jpg"
+                alt="Profile picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img
+                        src="./assets/experience.png"
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>Barista</p>
+                    </div>
+                    <div class="details-container">
+                        <img
+                        src="./assets/education.png"
+                        alt="Education icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Bachelor of Science<br />in Information System</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <!-- <p> 
+                      Coding and Web designing plays a major role in my life, there's nothing quite like 
+                      the thrill of solving complex problems and creating innovative 
+                      solutions through lines of code. Music is another one of my passions; 
+                      it's not just something I listen to, but something I feel deep within. 
+                      I love to sing along to my favorite tunes, and it brings me immense joy. 
+                      Additionally, I have a profound appreciation for spicy foods, whether 
+                      it's a fiery curry or a hot pepper sauce, the intense flavors and the 
+                      sensation of spice add a unique and delightful dimension to any meal. 
+                      For me, the combination of coding, music, and the love for spicy foods 
+                      makes life a bit more exciting and flavorful.
+                    </p> -->
+
+                    <p> The world of web development is like a canvas where I can unleash my 
+                        creativity and bring my ideas to life. I thrive on the challenge of turning
+                        lines of code into beautifully functional websites, and the feeling of 
+                        satisfaction when a project comes together is unmatched. Whether it's 
+                        diving into the intricacies of HTML and CSS or tackling complex JavaScript
+                        frameworks, I'm always eager to expand my knowledge and skill set. It's a journey I'm deeply
+                        committed to, and I can't wait to see where it takes me next.</p>
+                </div>
+            </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        />
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Wordpress</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Others</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Cybersecurity</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section> 
+  
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:arielleillustrisimo@gmail.com">arielleillustrisimo@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p> &#169; Arielle. Oct 2023</p>
+  </footer>
+
+  <div class="box-container">
+    <div class="box">
+        <div class="box-content">Hover on me.</div>
+    </div>
+  </div>  
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
